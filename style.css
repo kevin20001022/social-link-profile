@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+    color: white; /* 預設文字顏色設為白色 */
+}
+
+.profile-container {
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-container img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.profile-container h2 {
+    margin: 25px 0 0px;
+}
+
+.profile-container p.location {
+    margin: 15px 0;
+    color: rgb(193, 222, 80); /* 特定顏色 */
+}
+
+.profile-container p.title {
+    margin: 30px 0;
+    font-weight: normal;
+    color: rgb(178, 179, 178); /* 特定顏色 */
+}
+
+.profile-container p {
+    margin: 5px 0;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media a {
+    display: block;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 10px 10px;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 5px;
+    color:white;
+    background-color: rgb(51, 51,51);
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-media a:hover {
+    background-color: #444;
+    border-color: #444;
+}
